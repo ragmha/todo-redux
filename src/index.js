@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store';
-
+import { bindActionCreators } from 'redux';
 import { updateCurrent } from './reducers/todo';
 
-const todoChangeHandler = val => store.dispatch(updateCurrent(val));
+const actions = bindActionCreators({ updateCurrent }, store.dispatch);
 
 const render = () => {
   const state = store.getState();
@@ -15,7 +15,7 @@ const render = () => {
     <App
       todos={state.todos}
       currentTodo={state.currentTodo}
-      changeCurrent={todoChangeHandler}
+      changeCurrent={actions.updateCurrent}
     />,
     document.getElementById('root')
   );
