@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { updateCurrent } from '../reducers/todo';
 
 const TodoForm = props => {
-  console.log('Rendering Form');
   const { currentTodo, updateCurrent } = props;
 
   const handleInputChange = evt => {
