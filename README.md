@@ -7,7 +7,7 @@
 
 * ```$ yarn```
 
-* ```$ yarn dev``
+* ```$ yarn dev```
 
 ## License
 [MIT](./license) © [Raghib Hasan](http://raghibm.com/)
