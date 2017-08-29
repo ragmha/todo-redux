@@ -28,7 +28,7 @@ class TodoForm extends Component {
   }
 }
 
-export default connect(state => ({ currentTodo: state.currentTodo }), {
+export default connect(state => ({ currentTodo: state.todo.currentTodo }), {
   updateCurrent,
   saveTodo,
 })(TodoForm);

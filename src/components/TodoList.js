@@ -25,7 +25,7 @@ class TodoList extends Component {
 
 export default connect(
   state => ({
-    todos: state.todos,
+    todos: state.todo.todos,
   }),
   { fetchTodos }
 )(TodoList);
